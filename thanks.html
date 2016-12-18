@@ -1,177 +1,61 @@
-<!DOCTYPE html>
+--- 
+layout: default 
+---
 
+<!DOCTYPE HTML>
 <html>
 
 <head>
- <meta name="generator" content="HTML-Kit Tools HTML Tidy plugin">
- <title>
-  Generations Paintball
- </title>
- <meta charset="utf-8">
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
- <link rel="stylesheet" href="assets/css/main.css">
- <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
- <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	<title>Generations Paintball</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="assets/css/main.css" />
 </head>
 
 <body class="no-sidebar">
- <div id="page-wrapper">
-  <!-- Header Wrapper -->
-  <div id="header-wrapper">
-   <div class="container">
-    <!-- Header -->
-    <header id="header">
-     <div class="inner">
-      <!-- Logo -->
-      <h1>
-       <a href="index.html" id="logo">Generations Paintball</a>
-      </h1>
-      <!-- Nav -->
-      <nav id="nav">
-       <ul>
-        <li>
-         <a href="index.html">Home</a>
-        </li>
-        <li>
-         <a href="info.html">Info</a>
-         <ul>
-          <li>
-           <a href="info.html#one">What is paintball?</a>
-          </li>
-          <li>
-           <a href="info.html#two">First Timers</a>
-          </li>
-          <li>
-           <a href="info.html#three">Field Rules</a>
-          </li>
-         </ul>
-        </li>
-        <li>
-         <a href="waiver.html">Waiver</a>
-        </li>
-        <li>
-         <a href="rates.html">Rates</a>
-        </li>
-        <li>
-         <a href="contact.html">Contact Us</a>
-        </li>
-       </ul>
-      </nav>
-     </div>
-    </header>
-   </div>
-  </div>
-  <!-- Main Wrapper -->
-  <div id="main-wrapper">
-   <!-- Section one -->
-   <div id="one" class="wrapper style2">
-    <div class="inner">
-     <div class="container">
-      <div id="content">
-       <!-- Content -->
-       <article>
-        <header class="major">
-         <h2>
-          Thank you!
-         </h2>
-         <p>
-          Your message has been recieved, and we can usually get back to you within 1-2 business days.
-         </p>
-        </header>
-       </article>
-      </div>
-     </div>
-    </div>
-   </div>
-  </div>
-  <!-- Footer Wrapper -->
-  <div id="footer-wrapper">
-   <footer id="footer" class="container">
-    <div class="row">
-     <div class="6u 12u(mobile)">
-      <!-- Contact -->
-      <section>
-       <h2>
-        Get in touch
-       </h2>
-       <div>
-        <div class="row">
-         <div class="6u 12u(mobile)">
-		 <dl class="contact">
-		   <dt>
-            Phone
-           </dt>
-           <dd>
-            (281) 450-7433
-           </dd>
-           <dt>
-            Twitter
-           </dt>
-           <dd>
-            <a href="https://twitter.com/GenerationsPB">@GenerationsPB</a>
-           </dd>
-           <dt>
-            Facebook
-           </dt>
-           <dd>
-            <a href="https://www.facebook.com/generationspaintball">
+	<div id="page-wrapper">
 
-                          Generations Paintball</a>
-           </dd>
-           <dt>
-            Email
-           </dt>
-           <dd>
-            <a href="mailto:info@generationspaintball.com">info@generationspaintball.com</a>
-           </dd>
-          </dl>
-         </div>
-         <div class="6u 12u(mobile)">
-          <dl class="contact">
-           <dt>
-            Address
-           </dt>
-           <dd>
-            19205 FM 1488
-            <br>Magnolia, TX 77355
-            <br>USA
-			<br><a href="https://goo.gl/maps/EcfLhpUUui42">Click here for maps.</a>
-           </dd>
-          </dl>
-         </div>
-        </div>
-       </div>
-      </section>
-     </div>
-    </div>
-    <div class="row">
-     <div class="12u">
-      <div id="copyright">
-       <ul class="menu">
-        <li>&copy; Generations Paintball. All rights reserved
-        </li>
-       </ul>
-      </div>
-     </div>
-    </div>
-   </footer>
-  </div>
- </div>
- <!-- Scripts -->
- <script src="assets/js/jquery.min.js">
- </script>
- <script src="assets/js/jquery.dropotron.min.js">
- </script>
- <script src="assets/js/skel.min.js">
- </script>
- <script src="assets/js/skel-viewport.min.js">
- </script>
- <script src="assets/js/util.js">
- </script>
- <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
- <script src="assets/js/main.js">
- </script>
+		<!-- Header -->
+		{% include header.html %}
+
+		<!-- Main Wrapper -->
+		<div id="main-wrapper">
+
+			<!-- Main -->
+			<div id="main" class="container">
+				<div class="row">
+					<div class="12u">
+						<article id="content">
+							<h2>Thank you!</h2>
+							<p class="subtitle">Your message has been recieved, and we can usually get back to you within 1-2 business days.</p>
+						</article>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- Footer Wrapper -->
+		<div id="footer-wrapper">
+
+			<!-- Footer -->
+      {% include footer.html %}
+
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/jquery.slidertron.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/skel-viewport.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="assets/js/main.js"></script>
+
 </body>
 
 </html>

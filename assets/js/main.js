@@ -19,24 +19,8 @@
 		var	$window = $(window),
 			$body = $('body');
 
-		// Disable animations/transitions until the page has loaded.
-			$body.addClass('is-loading');
-
-			$window.on('load', function() {
-				$body.removeClass('is-loading');
-			});
-
 		// Fix: Placeholder polyfill.
 			$('form').placeholder();
-
-		// Dropdowns.
-			$('#nav > ul').dropotron({
-				offsetY: -22,
-				mode: 'fade',
-				noOpenerFade: true,
-				speed: 300,
-				detach: false
-			});
 
 		// Prioritize "important" elements on mobile.
 			skel.on('+mobile -mobile', function() {
@@ -46,13 +30,22 @@
 				);
 			});
 
+		// Dropdowns.
+			$('#nav > ul').dropotron({
+				offsetY: -10,
+				offsetX: 0,
+				hoverDelay: 0,
+				hideDelay: 50,
+				mode: 'instant',
+				noOpenerFade: true
+			});
+
 		// Off-Canvas Navigation.
 
 			// Title Bar.
 				$(
 					'<div id="titleBar">' +
 						'<a href="#navPanel" class="toggle"></a>' +
-						'<span class="title">' + $('#logo').html() + '</span>' +
 					'</div>'
 				)
 					.appendTo($body);
@@ -77,10 +70,39 @@
 						visibleClass: 'navPanel-visible'
 					});
 
-			// Fix: Remove navPanel transitions on WP<10 (poor/buggy performance).
+			// Fix: Remove transitions on WP<10 (poor/buggy performance).
 				if (skel.vars.os == 'wp' && skel.vars.osVersion < 10)
 					$('#titleBar, #navPanel, #page-wrapper')
 						.css('transition', 'none');
+
+		// Slider.
+			var $slider = $('#slider');
+			if ($slider.length > 0) {
+
+				$slider.slidertron({
+					mode: 'fade',
+					seamlessWrap: false,
+					viewerSelector: '.viewer',
+					reelSelector: '.viewer .reel',
+					slidesSelector: '.viewer .reel .slide',
+					advanceDelay: 7000,
+					speed: 600,
+					fadeInSpeed: 1500,
+					autoFit: true,
+					autoFitAspectRatio: (1200 / 832),
+					navPreviousSelector: '.previous-button',
+					navNextSelector: '.next-button',
+					indicatorSelector: '.indicator ul li',
+					slideLinkSelector: '.link'
+				});
+
+				$window
+					.on('resize load', function() {
+						$slider.trigger('slidertron_reFit');
+					})
+					.trigger('resize');
+
+			}
 
 	});
 

@@ -1,231 +1,176 @@
-<!DOCTYPE html>
+---
+layout: default
+---
 
+<!DOCTYPE HTML>
 <html>
 
 <head>
- <meta name="generator" content="HTML-Kit Tools HTML Tidy plugin">
- <title>
-  Generations Paintball
- </title>
- <meta charset="utf-8">
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
- <link rel="stylesheet" href="assets/css/main.css">
- <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
- <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+  <title>Generations Paintball</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+  <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 
 <body class="homepage">
- <div id="page-wrapper">
-  <!-- Header -->
-  <div id="header-wrapper">
-   <div class="container">
-    <!-- Header -->
-    <header id="header">
-     <div class="inner">
-      <!-- Logo -->
-      <h1>
-       <a href="index.html" id="logo">Generations Paintball</a>
-      </h1>
-      <!-- Nav -->
-      <nav id="nav">
-       <ul>
-        <li class="current_page_item">
-         <a href="index.html">Home</a>
-        </li>
-        <li>
-         <a href="info.html">Info</a>
-         <ul>
-          <li>
-           <a href="info.html#one">What is paintball?</a>
-          </li>
-          <li>
-           <a href="info.html#two">First Timers</a>
-          </li>
-          <li>
-           <a href="info.html#three">Field Rules</a>
-          </li>
-         </ul>
-        </li>
-        <li>
-         <a href="waiver.html">Waiver</a>
-        </li>
-        <li>
-         <a href="rates.html">Rates</a>
-        </li>
-        <li>
-         <a href="contact.html">Contact Us</a>
-        </li>
-       </ul>
-      </nav>
-     </div>
-    </header>
-    <!-- Banner -->
-    <div id="banner">
-     <h2>
-      Generations Paintball
-     </h2>
-     <p>
-      
-     </p>
-    </div>
-   </div>
-  </div>
-  <!-- Main Wrapper -->
-  <div id="main-wrapper">
-   <div class="wrapper style1">
-    <div class="inner">
-     <!-- Feature 1 -->
-     <section class="container box feature1">
-      <div class="row">
-       <div class="12u">
-        <header class="first major">
-         <h2>
-		 Safety waiver (This is an important thing)
-         </h2>
-         <p>
-		 <a href="http://bit.ly/generationspaintballwaiver" target="">Click here</a>
-         </p>
-        </header>
-       </div>
-      </div>
-      <div class="row">
-       <div class="4u 12u(mobile)">
-        <section>
-         <a href="#" class="image featured">
-          <img src="images/field.jpg" alt="">
-         </a>
-        </section>
-       </div>
-       <div class="4u 12u(mobile)">
-        <section>
-         <a href="#" class="image featured">
-          <img src="images/field2.jpg" alt="">
-         </a>
-        </section>
-       </div>
-       <div class="4u 12u(mobile)">
-        <section>
-         <a href="#" class="image featured">
-          <img src="images/field3.jpg" alt="">
-         </a>
-        </section>
-       </div>
-      </div>
-      <div class="row">
-       <div class="4u 12u(mobile)">
-        <section>
-         <a href="#" class="image featured">
-          <img src="images/field4.jpg" alt="">
-         </a>
-        </section>
-       </div>
-       <div class="4u 12u(mobile)">
-        <section>
-         <a href="#" class="image featured">
-          <img src="images/field5.JPG" alt="">
-         </a>
-        </section>
-       </div>
-       <div class="4u 12u(mobile)">
-        <section>
-         <a href="#" class="image featured">
-          <img src="images/field6.JPG" alt="">
-         </a>
-        </section>
-       </div>
-      </div>
-     </section>
-    </div>
-   </div>
-  </div>
-  <!-- Footer Wrapper -->
-  <div id="footer-wrapper">
-   <footer id="footer" class="container">
-    <div class="row">
-     <div class="6u 12u(mobile)">
-      <!-- Contact -->
-      <section>
-       <h2>
-        Get in touch
-       </h2>
-       <div>
-        <div class="row">
-         <div class="6u 12u(mobile)">
-<dl class="contact">
-		   <dt>
-            Phone
-           </dt>
-           <dd>
-            (281) 450-7433
-           </dd>
-           <dt>
-            Twitter
-           </dt>
-           <dd>
-            <a href="https://twitter.com/GenerationsPB">@GenerationsPB</a>
-           </dd>
-           <dt>
-            Facebook
-           </dt>
-           <dd>
-            <a href="https://www.facebook.com/generationspaintball">
+  <div id="page-wrapper">
 
-                          Generations Paintball</a>
-           </dd>
-           <dt>
-            Email
-           </dt>
-           <dd>
-            <a href="mailto:info@generationspaintball.com">info@generationspaintball.com</a>
-           </dd>
-          </dl>
-         </div>
-         <div class="6u 12u(mobile)">
-          <dl class="contact">
-           <dt>
-            Address
-           </dt>
-           <dd>
-            19205 FM 1488
-            <br>Magnolia, TX 77355
-            <br>USA
-			<br><a href="https://goo.gl/maps/EcfLhpUUui42">Click here for maps.</a>
-           </dd>
-          </dl>
-         </div>
+		<!-- Header -->
+		{% include header.html %}
+
+    <!-- Banner Wrapper -->
+    <div id="banner-wrapper">
+
+      <!-- Banner -->
+      <div id="banner" class="container">
+        <div class="row">
+          <div class="12u">
+
+            <!-- Slider -->
+            <div id="slider">
+              <div class="viewer">
+                <div class="reel">
+                  <div class="slide">
+                    <div class="info">
+                      <h2 style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
+                        <strong>Team Building</strong>
+                      </h2>
+                    </div>
+                    <img src="images/slide1.png" alt="" />
+                  </div>
+                  <div class="slide">
+                    <div class="info">
+                      <h2 style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
+                        <strong>High Quality Equipment</strong>
+                      </h2>
+                    </div>
+                    <img src="images/slide2.png" alt="" />
+                  </div>
+                  <div class="slide">
+                    <div class="info">
+                      <h2 style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
+                        <strong>Fun for all ages</strong>
+                      </h2>
+                    </div>
+                    <img src="images/slide3.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="indicator">
+                <ul>
+                  <li class="active">1</li>
+                  <li>2</li>
+                  <li>3</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
         </div>
-       </div>
-      </section>
-     </div>
-    </div>
-    <div class="row">
-     <div class="12u">
-      <div id="copyright">
-       <ul class="menu">
-        <li>&copy; Generations Paintball. All rights reserved
-        </li>
-       </ul>
+        <div class="row">
+          <div class="4u 12u(mobile)">
+            <section class="highlight">
+              <a href="waiver.html">
+                <span class="image fit"><img src="images/dog.png" alt=""></span>
+                <header>
+                  <h2>Safety Waiver</h2>
+                  <p>This is an important thing!</p>
+                </header>
+              </a>
+            </section>
+          </div>
+          <div class="4u 12u(mobile)">
+            <section class="highlight alt">
+              <a href="info.html#rules">
+                <span class="image fit"><img src="images/speedball.png" alt=""></span>
+                <header>
+                  <h2>Field Rules</h2>
+                  <p>They are for your safety.</p>
+                </header>
+              </a>
+            </section>
+          </div>
+          <div class="4u 12u(mobile)">
+            <section class="highlight alt2">
+              <a href="rates.html">
+                <span class="image fit"><img src="images/masks.png" alt=""></span>
+                <header>
+                  <h2>Rates and Pricing</h2>
+                  <p>Fair prices and equipment.</p>
+                </header>
+              </a>
+            </section>
+          </div>
+        </div>
       </div>
-     </div>
     </div>
-   </footer>
+
+    <!-- Featured Wrapper -->
+    <div id="featured-wrapper">
+
+      <!-- Featured -->
+      <div id="featured" class="container">
+        <div class="row">
+          <div class="3u 12u(mobile)">
+            <section>
+              <h2>More Information</h2>
+              <p class="subtitle">Games We Play</p>
+              <ul class="style1">
+                <li class="first"><a href="info.html#tdm">Team Deathmatch</a></li>
+                <li><a href="info.html#ctf">Capture the Flag</a></li>
+                <li><a href="info.html#jgn">Juggernaut</a></li>
+                <li><a href="info.html#sbt">Sabotage</a></li>
+                <li><a href="info.html#cwr">Civil War</a></li>
+                <li><a href="info.html#ptp">Protect the President</a></li>
+                <li><a href="info.html#ffa">Free for All</a></li>
+              </ul>
+            </section>
+          </div>
+          <div class="3u 12u(mobile)">
+            <section>
+              <a href="#" class="image fit"><img src="images/tires.png" alt=""></a>
+							<a href="#" class="image fit"><img src="images/tires2.png" alt=""></a>
+            </section>
+          </div>
+          <div class="3u 12u(mobile)">
+            <section>
+              <a href="#" class="image fit"><img src="images/crates.png" alt=""></a>
+              <a href="#" class="image fit"><img src="images/crates2.png" alt=""></a>
+            </section>
+          </div>
+          <div class="3u 12u(mobile)">
+            <section>
+              <a href="#" class="image fit"><img src="images/crates3.png" alt=""></a>
+              <a href="#" class="image fit"><img src="images/chaos.png" alt=""></a>
+            </section>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer Wrapper -->
+    <div id="footer-wrapper">
+
+      <!-- Footer -->
+      {% include footer.html %}
+
+    </div>
+
   </div>
- </div>
- <!-- Scripts -->
- <script src="assets/js/jquery.min.js">
- </script>
- <script src="assets/js/jquery.dropotron.min.js">
- </script>
- <script src="assets/js/skel.min.js">
- </script>
- <script src="assets/js/skel-viewport.min.js">
- </script>
- <script src="assets/js/util.js">
- </script>
- <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
- <script src="assets/js/main.js">
- </script>
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.dropotron.min.js"></script>
+  <script src="assets/js/jquery.slidertron.min.js"></script>
+  <script src="assets/js/skel.min.js"></script>
+  <script src="assets/js/skel-viewport.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+  <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
